@@ -31,10 +31,10 @@
     <platform name="ios">
         
         <!-- iOS9 whitelisting -->
-        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-            <string>need location access to find things nearby</string>
-        </config-file>
         
+        <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="overwrite">
+            <string>need location access to find things nearby</string>
+        </edit-config>
         
         
     </platform>
